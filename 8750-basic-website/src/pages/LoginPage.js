@@ -1,16 +1,23 @@
+import { useNavigate } from "react-router";
 
 function LoginPage() {
+  const history = useNavigate();
+
+  const SignUpPage = () => {
+    history("/");
+  }
+
   return (
     <div style={styles.main}>
       <div style={styles.primaryContainer}>
         <p style={styles.heading}>Welcome</p>
         <div style={styles.fieldContainer}>
           <p style={styles.loginText}>Username:</p>
-          <input type="text" style={styles.fields}/>
+          <input type="text" style={styles.fields} />
           <p style={styles.loginText}>Password:</p>
-          <input type="text" style={styles.fields}/>
+          <input type="text" style={styles.fields} />
           <button onClick={null} style={styles.buttons}>Login</button>
-          <button onClick={null} style={styles.buttons}>Register</button>
+          <button onClick={SignUpPage} style={styles.buttons}>Register</button>
         </div>
       </div>
     </div>

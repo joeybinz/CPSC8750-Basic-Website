@@ -1,6 +1,12 @@
 import './App.css';
+import { useNavigate } from "react-router";
 
 function Sign_Up() {
+    const history = useNavigate();
+
+    const LoginPage = () => {
+        history("/login")
+    }
     return (
         <div className="App">
             <header className="App-header">
@@ -21,6 +27,8 @@ function Sign_Up() {
                     <input type="text" name="password" className='Input'></input>
                 </label>
                 <button className='Button' onClick={console.log("Home Page")}>Submit</button>
+
+                <button className='Button' onClick={LoginPage}>Log In</button>
             </header>
         </div>
     );
