@@ -9,8 +9,8 @@ function LoginPage() {
           <input type="text" style={styles.fields}/>
           <p style={styles.loginText}>Password:</p>
           <input type="text" style={styles.fields}/>
-          <input type="submit" value="Login" style={styles.buttons}/>
-          <input type="submit" value="Signup" style={styles.buttons}/>
+          <button onClick={null} style={styles.buttons}>Login</button>
+          <button onClick={null} style={styles.buttons}>Register</button>
         </div>
       </div>
     </div>
@@ -50,6 +50,7 @@ const styles = {
   loginText: {
     padding: 0,
     margin: 0,
+    fontSize: 14,
   },
   fields: {
     padding: 10,
