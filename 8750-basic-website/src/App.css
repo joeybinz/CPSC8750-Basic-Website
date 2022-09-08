@@ -36,7 +36,10 @@
 
 .Button {
   background-color: #e94d0a;
-  width: 5%;
+  width: fit-content;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
   font-size:xx-large
 }
 
